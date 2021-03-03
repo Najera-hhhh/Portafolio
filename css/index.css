@@ -1,0 +1,52 @@
+body {
+    background: #29292a;
+}
+
+.work {
+    width: 70%;
+    margin-top: 50px;
+}
+
+.work * {
+    color: white;
+}
+
+.img {
+    width: 760px;
+    margin: auto;
+}
+
+.info {
+    width: 100%;
+    padding-top: 10px;
+    background: #141414;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+}
+
+.info a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .img {
+        width: 500px;
+        margin: auto;
+    }
+    .info {
+        grid-template-columns: 1fr;
+        min-height: 270px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .img {
+        width: 250px;
+        margin: auto;
+    }
+    .info {
+        grid-template-columns: 1fr;
+        min-height: 290px;
+    }
+}
